@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BruinTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-Vk-Buz">
+                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="e5o-DQ-3es"/>
+                                    <constraint firstAttribute="width" constant="150" id="g2x-4Z-r8y"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ButtonBG"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkr-kD-4K8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3v-I2-S37">
+                                <rect key="frame" x="166.5" y="483" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5z-MI-kNl">
+                                <rect key="frame" x="182" y="162" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvE-a2-gTq">
+                                <rect key="frame" x="46" y="50" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NaX-A8-ugT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZvE-a2-gTq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="13z-s5-o4l"/>
+                            <constraint firstItem="gbG-Vk-Buz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cpo-Fc-8ga"/>
+                            <constraint firstItem="E3v-I2-S37" firstAttribute="top" secondItem="gbG-Vk-Buz" secondAttribute="bottom" constant="75" id="NAB-my-mlh"/>
+                            <constraint firstItem="a5z-MI-kNl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFB-uS-e3c"/>
+                            <constraint firstItem="ZvE-a2-gTq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="i4B-lg-PRT"/>
+                            <constraint firstItem="gbG-Vk-Buz" firstAttribute="top" secondItem="a5z-MI-kNl" secondAttribute="bottom" constant="75" id="jq8-Jk-P7d"/>
+                            <constraint firstItem="E3v-I2-S37" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWy-pT-HnB"/>
+                            <constraint firstItem="gbG-Vk-Buz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yst-J1-h0c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="a5z-MI-kNl" id="nTc-in-7tv"/>
+                        <outlet property="startButton" destination="ZvE-a2-gTq" id="jje-my-aom"/>
+                        <outlet property="tapButton" destination="gbG-Vk-Buz" id="Sk3-o2-DbY"/>
+                        <outlet property="timerLabel" destination="E3v-I2-S37" id="h3X-96-bxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ButtonBG" width="600" height="600"/>
+    </resources>
+</document>

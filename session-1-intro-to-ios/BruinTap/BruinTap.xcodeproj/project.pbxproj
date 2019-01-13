@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		441109C11FA970B700969310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441109C01FA970B700969310 /* AppDelegate.swift */; };
+		441109C31FA970B700969310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441109C21FA970B700969310 /* ViewController.swift */; };
+		441109C61FA970B700969310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441109C41FA970B700969310 /* Main.storyboard */; };
+		441109C81FA970B700969310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441109C71FA970B700969310 /* Assets.xcassets */; };
+		441109CB1FA970B700969310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441109C91FA970B700969310 /* LaunchScreen.storyboard */; };
+		441109D61FA970B700969310 /* BruinTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441109D51FA970B700969310 /* BruinTapTests.swift */; };
+		441109E11FA970B700969310 /* BruinTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441109E01FA970B700969310 /* BruinTapUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		441109D21FA970B700969310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441109B51FA970B700969310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 441109BC1FA970B700969310;
+			remoteInfo = BruinTap;
+		};
+		441109DD1FA970B700969310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441109B51FA970B700969310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 441109BC1FA970B700969310;
+			remoteInfo = BruinTap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		441109BD1FA970B700969310 /* BruinTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BruinTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		441109C01FA970B700969310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		441109C21FA970B700969310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		441109C51FA970B700969310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		441109C71FA970B700969310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		441109CA1FA970B700969310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		441109CC1FA970B700969310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441109D11FA970B700969310 /* BruinTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BruinTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		441109D51FA970B700969310 /* BruinTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruinTapTests.swift; sourceTree = "<group>"; };
+		441109D71FA970B700969310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441109DC1FA970B700969310 /* BruinTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BruinTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		441109E01FA970B700969310 /* BruinTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruinTapUITests.swift; sourceTree = "<group>"; };
+		441109E21FA970B700969310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		441109BA1FA970B700969310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441109CE1FA970B700969310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441109D91FA970B700969310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		441109B41FA970B700969310 = {
+			isa = PBXGroup;
+			children = (
+				441109BF1FA970B700969310 /* BruinTap */,
+				441109D41FA970B700969310 /* BruinTapTests */,
+				441109DF1FA970B700969310 /* BruinTapUITests */,
+				441109BE1FA970B700969310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		441109BE1FA970B700969310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				441109BD1FA970B700969310 /* BruinTap.app */,
+				441109D11FA970B700969310 /* BruinTapTests.xctest */,
+				441109DC1FA970B700969310 /* BruinTapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		441109BF1FA970B700969310 /* BruinTap */ = {
+			isa = PBXGroup;
+			children = (
+				441109C01FA970B700969310 /* AppDelegate.swift */,
+				441109C21FA970B700969310 /* ViewController.swift */,
+				441109C41FA970B700969310 /* Main.storyboard */,
+				441109C71FA970B700969310 /* Assets.xcassets */,
+				441109C91FA970B700969310 /* LaunchScreen.storyboard */,
+				441109CC1FA970B700969310 /* Info.plist */,
+			);
+			path = BruinTap;
+			sourceTree = "<group>";
+		};
+		441109D41FA970B700969310 /* BruinTapTests */ = {
+			isa = PBXGroup;
+			children = (
+				441109D51FA970B700969310 /* BruinTapTests.swift */,
+				441109D71FA970B700969310 /* Info.plist */,
+			);
+			path = BruinTapTests;
+			sourceTree = "<group>";
+		};
+		441109DF1FA970B700969310 /* BruinTapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				441109E01FA970B700969310 /* BruinTapUITests.swift */,
+				441109E21FA970B700969310 /* Info.plist */,
+			);
+			path = BruinTapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		441109BC1FA970B700969310 /* BruinTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441109E51FA970B700969310 /* Build configuration list for PBXNativeTarget "BruinTap" */;
+			buildPhases = (
+				441109B91FA970B700969310 /* Sources */,
+				441109BA1FA970B700969310 /* Frameworks */,
+				441109BB1FA970B700969310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BruinTap;
+			productName = BruinTap;
+			productReference = 441109BD1FA970B700969310 /* BruinTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		441109D01FA970B700969310 /* BruinTapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441109E81FA970B700969310 /* Build configuration list for PBXNativeTarget "BruinTapTests" */;
+			buildPhases = (
+				441109CD1FA970B700969310 /* Sources */,
+				441109CE1FA970B700969310 /* Frameworks */,
+				441109CF1FA970B700969310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				441109D31FA970B700969310 /* PBXTargetDependency */,
+			);
+			name = BruinTapTests;
+			productName = BruinTapTests;
+			productReference = 441109D11FA970B700969310 /* BruinTapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		441109DB1FA970B700969310 /* BruinTapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441109EB1FA970B700969310 /* Build configuration list for PBXNativeTarget "BruinTapUITests" */;
+			buildPhases = (
+				441109D81FA970B700969310 /* Sources */,
+				441109D91FA970B700969310 /* Frameworks */,
+				441109DA1FA970B700969310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				441109DE1FA970B700969310 /* PBXTargetDependency */,
+			);
+			name = BruinTapUITests;
+			productName = BruinTapUITests;
+			productReference = 441109DC1FA970B700969310 /* BruinTapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		441109B51FA970B700969310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "KxT Games";
+				TargetAttributes = {
+					441109BC1FA970B700969310 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 35RJCBGV7U;
+						ProvisioningStyle = Automatic;
+					};
+					441109D01FA970B700969310 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 35RJCBGV7U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 441109BC1FA970B700969310;
+					};
+					441109DB1FA970B700969310 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 35RJCBGV7U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 441109BC1FA970B700969310;
+					};
+				};
+			};
+			buildConfigurationList = 441109B81FA970B700969310 /* Build configuration list for PBXProject "BruinTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 441109B41FA970B700969310;
+			productRefGroup = 441109BE1FA970B700969310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				441109BC1FA970B700969310 /* BruinTap */,
+				441109D01FA970B700969310 /* BruinTapTests */,
+				441109DB1FA970B700969310 /* BruinTapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		441109BB1FA970B700969310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441109CB1FA970B700969310 /* LaunchScreen.storyboard in Resources */,
+				441109C81FA970B700969310 /* Assets.xcassets in Resources */,
+				441109C61FA970B700969310 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441109CF1FA970B700969310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441109DA1FA970B700969310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		441109B91FA970B700969310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441109C31FA970B700969310 /* ViewController.swift in Sources */,
+				441109C11FA970B700969310 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441109CD1FA970B700969310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441109D61FA970B700969310 /* BruinTapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		441109D81FA970B700969310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441109E11FA970B700969310 /* BruinTapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		441109D31FA970B700969310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 441109BC1FA970B700969310 /* BruinTap */;
+			targetProxy = 441109D21FA970B700969310 /* PBXContainerItemProxy */;
+		};
+		441109DE1FA970B700969310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 441109BC1FA970B700969310 /* BruinTap */;
+			targetProxy = 441109DD1FA970B700969310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		441109C41FA970B700969310 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441109C51FA970B700969310 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		441109C91FA970B700969310 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441109CA1FA970B700969310 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		441109E31FA970B700969310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		441109E41FA970B700969310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		441109E61FA970B700969310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35RJCBGV7U;
+				INFOPLIST_FILE = BruinTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KxT.BruinTap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		441109E71FA970B700969310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35RJCBGV7U;
+				INFOPLIST_FILE = BruinTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KxT.BruinTap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		441109E91FA970B700969310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 35RJCBGV7U;
+				INFOPLIST_FILE = BruinTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KxT.BruinTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BruinTap.app/BruinTap";
+			};
+			name = Debug;
+		};
+		441109EA1FA970B700969310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 35RJCBGV7U;
+				INFOPLIST_FILE = BruinTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KxT.BruinTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BruinTap.app/BruinTap";
+			};
+			name = Release;
+		};
+		441109EC1FA970B700969310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 35RJCBGV7U;
+				INFOPLIST_FILE = BruinTapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KxT.BruinTapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BruinTap;
+			};
+			name = Debug;
+		};
+		441109ED1FA970B700969310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 35RJCBGV7U;
+				INFOPLIST_FILE = BruinTapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KxT.BruinTapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BruinTap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		441109B81FA970B700969310 /* Build configuration list for PBXProject "BruinTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441109E31FA970B700969310 /* Debug */,
+				441109E41FA970B700969310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		441109E51FA970B700969310 /* Build configuration list for PBXNativeTarget "BruinTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441109E61FA970B700969310 /* Debug */,
+				441109E71FA970B700969310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		441109E81FA970B700969310 /* Build configuration list for PBXNativeTarget "BruinTapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441109E91FA970B700969310 /* Debug */,
+				441109EA1FA970B700969310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		441109EB1FA970B700969310 /* Build configuration list for PBXNativeTarget "BruinTapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441109EC1FA970B700969310 /* Debug */,
+				441109ED1FA970B700969310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 441109B51FA970B700969310 /* Project object */;
+}
