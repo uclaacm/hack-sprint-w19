@@ -1,4 +1,4 @@
-# HOTH 5 - iOS Workshop README
+# Hack Sprint Session 1 README
 
 **Slides**: https://docs.google.com/presentation/d/1jdLz1cU41l7fj3WQTB8BHoS2whf8-1vAX3s8D_2MoaQ/edit?usp=sharing
 
@@ -18,13 +18,17 @@
   - <a href="#score">Incrementing Score when we Tap the Button</a>
   - <a href="#timer">Implementing a Timer</a>
   - <a href="#tap">Disabling and Enabling the Tap Button</a>
+- Add Another View Controller
+  - Interface Builder
+  - Add a Segue
+  - Add an Unwind Segue
 
 ## <a id="gs">Getting Started</a>
 
 1. Begin by creating a new project in Xcode.
 2. Select "Create a new Xcode project" near the bottom left of the window.
 
-![img](https://lh5.googleusercontent.com/Uv_0UW2wVlVMjLCC0YniMQTgR-SZEVgo27yXnlcWThcU2tvB9wDIeW4swW8Ky9C0LvOwxks0nwM3cjUWRoa_YxKu-Q1EsuSmeIRfAQqAhrJ5lln5IY9lE-8wdxwkNJAKNfHW5Y-v)
+![open img](https://lh5.googleusercontent.com/Uv_0UW2wVlVMjLCC0YniMQTgR-SZEVgo27yXnlcWThcU2tvB9wDIeW4swW8Ky9C0LvOwxks0nwM3cjUWRoa_YxKu-Q1EsuSmeIRfAQqAhrJ5lln5IY9lE-8wdxwkNJAKNfHW5Y-v)
 
 ------
 
@@ -413,5 +417,84 @@ var time: Double = 10
    }
    ```
 
-4. Build and run the app again. Congratulations! You have finished your first app!
+4. Build and run the app again.
+
+## Add Another View Controller
+
+### Interface Builder
+
+1. In the **Project Navigator** on the left, select the Main.storyboard file.
+2. Locate the button that has a circle with a square in it on the top right of the screen and click it to reveal the Object Menu.
+
+<img src="https://lh3.googleusercontent.com/c4g4gd44sRChLdRL_3ArL4_AQuJjfugHd0qImIO1_qRxSF5PIx33ukBgPooj39Ppxl_EJX7P3iwnvvvLx0ne8i2ierXyna4rSMxl9sGE-KA2rwXU5uPpGZN9-5v0bHvVJ2uV_WoJ" width=500px>
+
+---
+
+3. Locate the "View Controller" object and click and drag one to the right of the View Controller we've already made.
+
+4. Scroll and locate the "Label" and "Button" objects, then drag a label and a button into the **new** view controller we created and one button into the **old** view controller like so:
+
+<img src="https://lh5.googleusercontent.com/yC95BmDtzN56IAE9cJxzVwqsjOHsqu1tm35zwpz_68zfugNz7mp68fbz-0JWpcSVQhdUg9Y87paymVawaP3wP9AGLQOP5VE0wN9wd5v53wYTh8D311qWnGyN-5yLTMBlLE6Wz9zH" width=400px>
+
+---
+
+5. Select the button we placed in the top right corner of the old view controller.
+6. Use the Attributes Inspector to change its text to "Spill the Tea".
+7. With the button still selected, click the "Add New Constraints" button near the bottom right of the page.
+8. Set the top and right margins to **30**. The red lines should now be solid rather than dashed.
+9. Click "Add 2 Constraints".
+
+<img src="https://lh4.googleusercontent.com/S5eZnNe162K1P5DBUv1qyAgB299TtLEUl0IyqDkrT0ZZ3Ic7QyTZxCnNN6lxZk_DQ7htdkxI0-v2FLyEQtJlQQYfq5VlsXhyOFc24-7w8IY0nN1WV8zRYKCs7vjiuUNWnoEOcpKc" width=500px>
+
+---
+
+10. Select the button we placed in the top left corner of the new view controller.
+11. Use the Attributes Inspector to change its text to "Close".
+12. With the button still selected, click the "Add New Constraints" button near the bottom right of the page.
+13. Set the top and left margins to **30**. The red lines should now be solid rather than dashed.
+14. Click "Add 2 Constraints".
+
+<img src="https://lh4.googleusercontent.com/743rFVbFcXd6FOolgaxY-HB7ZIPf4nhUU7ym7PY4yVaNEwmkTMvB25aGc2p94nCjEfktSFi1nZ_5RcuqCY9gTJ3W20K4njUiuyjA5fNuh4-naN2O2DLcADVjHhSDEpjtAjioew6P" width=400px>
+
+---
+
+15. Select the label we placed in the middle of the new view controller.
+16. Use the Attributes Inspector to change its text to "Emacs > Vim". **This step is very important!**
+17. With the button still selected, click the "Align" button near the bottom right of the page.
+18. Center the label horizontally and vertically
+19. Click "Add 2 Constraints".
+
+<img src="https://lh4.googleusercontent.com/Tr-upf8kuEnWZWkZu7LWqqDrIf9ZA8tmHIJlm54cvtp2IvmRTf71TTlYW99MetCaRKXn-0NO5QKwQD8K5jOp0lUT5KiaXToYcLMDS9x2r5i8c1Y6lYFMEUFKLTYTiIORMeVQEj_V" width=400px>
+
+---
+
+### Add a Segue
+
+1. Select the "Spill the Tea" button we placed in the old view controller.
+2. **While holding down control** (not to be confused with cmd(⌘)), click on the "Spill the Tea" button and drag to the new view controller.
+3. In the window that appears, select "Present modally".
+
+<img src="https://lh4.googleusercontent.com/_i8Vjw5vlVFL7RlsGInMfjBRWPqkQ9svHwGvxni58KSDcPHVIe7HaX0FducFcqWT-BaUPmwqqYA5qg24Rnfpks14_yGLXxWNBEN0z8P-Yhu6kUI7dysVhg1_A1v6OA3BhzdGemCN" width=400px>
+
+---
+
+### Add an Unwind Segue
+
+1. In the **Project Navigator** on the left, select the ViewController.swift file.
+2. Copy the following code into the class (make sure you copy it **outside** of all of the other functions we've written).
+
+```swift
+@IBAction func unwind(segue: UIStoryboardSegue) { }
+```
+
+---
+
+3. Use the Project Navigator to go back to the Interface Builder by selecting the Main.storyboard file.
+4. **While holding down control** (not to be confused with cmd(⌘)), click on the "Close" button and drag to the "Exit door" icon on the top of the new view controller.
+
+<img src="https://lh3.googleusercontent.com/m1ZSzOHA1tlQQBAtjUFM4Wb7LYdomEes4zi21ynaAIWSlKdhtkjOxW_t_LEUG1aZOgdTarVsPQhe3HHmY_WaBwR9H_ll4VIq_Aw8vjrMH4manx8JMrNH6HN_7dWIKdvp6sfH0NLC" width=500px>
+
+---
+
+5. Build your app and run. Congratulations, you've finished your first app!
 

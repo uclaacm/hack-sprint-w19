@@ -47,6 +47,8 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func unwind(segue: UIStoryboardSegue) { }
+    
     @objc func timerAction() {
         
         time -= 0.01
@@ -70,11 +72,5 @@ class ViewController: UIViewController {
         tapButton.isEnabled = false
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
-

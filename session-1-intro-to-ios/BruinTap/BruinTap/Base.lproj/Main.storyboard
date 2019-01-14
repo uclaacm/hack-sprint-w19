@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-Vk-Buz">
-                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="e5o-DQ-3es"/>
                                     <constraint firstAttribute="width" constant="150" id="g2x-4Z-r8y"/>
@@ -34,13 +33,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3v-I2-S37">
-                                <rect key="frame" x="166.5" y="483" width="42" height="21"/>
+                                <rect key="frame" x="166.5" y="483.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5z-MI-kNl">
-                                <rect key="frame" x="182" y="162" width="10.5" height="21"/>
+                                <rect key="frame" x="182.5" y="162.5" width="10.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,6 +51,13 @@
                                     <action selector="startTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NaX-A8-ugT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V99-Jg-Pkj">
+                                <rect key="frame" x="245" y="50" width="84" height="30"/>
+                                <state key="normal" title="Spill the Tea"/>
+                                <connections>
+                                    <segue destination="6Dn-SS-FJJ" kind="presentation" id="cnj-uE-Vid"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -59,8 +65,10 @@
                             <constraint firstItem="gbG-Vk-Buz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cpo-Fc-8ga"/>
                             <constraint firstItem="E3v-I2-S37" firstAttribute="top" secondItem="gbG-Vk-Buz" secondAttribute="bottom" constant="75" id="NAB-my-mlh"/>
                             <constraint firstItem="a5z-MI-kNl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFB-uS-e3c"/>
+                            <constraint firstItem="V99-Jg-Pkj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="dea-Gy-G0r"/>
                             <constraint firstItem="ZvE-a2-gTq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="i4B-lg-PRT"/>
                             <constraint firstItem="gbG-Vk-Buz" firstAttribute="top" secondItem="a5z-MI-kNl" secondAttribute="bottom" constant="75" id="jq8-Jk-P7d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V99-Jg-Pkj" secondAttribute="trailing" constant="30" id="mMf-UV-oPK"/>
                             <constraint firstItem="E3v-I2-S37" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWy-pT-HnB"/>
                             <constraint firstItem="gbG-Vk-Buz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yst-J1-h0c"/>
                         </constraints>
@@ -74,6 +82,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lpX-Bk-Ah5">
+            <objects>
+                <viewController id="6Dn-SS-FJJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NK5-Mb-fEC"/>
+                        <viewControllerLayoutGuide type="bottom" id="yCN-DN-J7E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWW-ZE-maw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-5Q-jsU">
+                                <rect key="frame" x="46" y="50" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <segue destination="vWp-fB-Ouc" kind="unwind" unwindAction="unwindWithSegue:" id="qEx-HF-HAo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emacs &gt; Vim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZE-Ex-nQR">
+                                <rect key="frame" x="137" y="323" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1AX-5Q-jsU" firstAttribute="leading" secondItem="UWW-ZE-maw" secondAttribute="leadingMargin" constant="30" id="mym-zY-qSI"/>
+                            <constraint firstItem="1AX-5Q-jsU" firstAttribute="top" secondItem="NK5-Mb-fEC" secondAttribute="bottom" constant="30" id="sbz-3v-8qo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xeh-Gf-FVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vWp-fB-Ouc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1111" y="134"/>
         </scene>
     </scenes>
     <resources>
