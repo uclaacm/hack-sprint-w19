@@ -12,11 +12,11 @@ var skyColor = "blue" // skyColor is of type String!
 var isHungry = false  // isHungry is of type Bool!
 
 // If statements
-let school = "UCLA"
-if (school == "Berkeley") {
-    print("cannot breathe")
-} else if (school == "UCLA") {
-    print("just keep breathin and breathin and breathin")
+let hunger = 10
+if (hunger < 10) {
+    print("let's go to bplate")
+} else {
+    print("i need de neve late night chicken tenders")
 }
 
 // Functions
@@ -27,51 +27,47 @@ func squareNum(n: Int) -> Int {
 let result = squareNum(n: 7)
 print(result)
 
-func speakTruth() {
-    print("Bplate is the superior dining hall")
+func sayHello() {
+    print("Hello, world!")
 }
 
-speakTruth()
+sayHello()
 
 // Classes
-class Student {
-    var name: String
-    var uid: Int
+class Animal {
+    var numLegs: Int
+    var noise: String
     
-    init(name: String, uid: Int) {
-        self.name = name
-        self.uid = uid
+    init(numLegs: Int, noise: String) {
+        self.numLegs = numLegs
+        self.noise = noise
     }
     
-    func sayHello() {
-        print("My name is " + self.name + " and my UID is " + String(self.uid))
+    func makeNoise() {
+        print(self.noise)
     }
 }
 
-let lea = Student(name: "Lea", uid: 123456789)
-lea.sayHello()
+let tim = Animal(numLegs: 3, noise: "uwu")
+tim.makeNoise()
 
-let connie = Student(name: "Connie", uid: 987654321)
-connie.sayHello()
+let connie = Animal(numLegs: 2, noise: "stop saying uwu")
+connie.makeNoise()
 
-lea.name = "Bob"
-lea.sayHello()
-connie.sayHello()
+tim.numLegs -= 2
+print(tim.numLegs)
+print(connie.numLegs)
 
 // Inheritance
-class NerdyStudent: Student {
-    var gpa: Double
+class Fox: Animal {
+    var tailLength: Double
     
-    init(name: String, uid: Int, gpa: Double) {
-        self.gpa = gpa
-        super.init(name: name, uid: uid)
-    }
-    
-    func brag() {
-        print("My GPA is " + String(gpa))
+    init(tailLength: Double) {
+        self.tailLength = tailLength
+        super.init(numLegs: 4, noise: "ringding")
     }
 }
 
-let tim = NerdyStudent(name: "Timothy", uid: 111111111, gpa: 3.7)
-tim.brag()
-tim.sayHello()
+let fox = Fox(tailLength: 2.1)
+print(fox.tailLength)
+fox.makeNoise()
