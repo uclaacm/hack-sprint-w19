@@ -1,73 +1,132 @@
-/// Variables
-let maximumLoginAttempts = 10
-var currentNumberOfAttempts = 0
+//
+//  LinkedList.swift
+//  Radius
+//
+//  Created by Kevin Tan on 1/16/19.
+//  Copyright © 2019 Radius Inc. All rights reserved.
+//
 
-currentNumberOfAttempts = currentNumberOfAttempts + 1
-//maximumLoginAttempts = maximumLoginAttempts + 1
+import Foundation
 
-/// Type Inference
-var id = 5            // id is of type Int!
-var pi = 3.14         // pi is of type Double!
-var skyColor = "blue" // skyColor is of type String!
-var isHungry = false  // isHungry is of type Bool!
-
-// If statements
-let hunger = 10
-if (hunger < 10) {
-    print("let's go to bplate")
-} else {
-    print("i need de neve late night chicken tenders")
-}
-
-// Functions
-func squareNum(n: Int) -> Int {
-    return n * n
-}
-
-let result = squareNum(n: 7)
-print(result)
-
-func sayHello() {
-    print("Hello, world!")
-}
-
-sayHello()
-
-// Classes
-class Animal {
-    var numLegs: Int
-    var noise: String
+class Node<T: Equatable> {
+    var value: T
+    var next: Node<T>?
+    weak var prev: Node<T>?
     
-    init(numLegs: Int, noise: String) {
-        self.numLegs = numLegs
-        self.noise = noise
-    }
-    
-    func makeNoise() {
-        print(self.noise)
+    init(value: T) {
+        self.value = value
     }
 }
 
-let tim = Animal(numLegs: 3, noise: "uwu")
-tim.makeNoise()
-
-let connie = Animal(numLegs: 2, noise: "stop saying uwu")
-connie.makeNoise()
-
-tim.numLegs -= 2
-print(tim.numLegs)
-print(connie.numLegs)
-
-// Inheritance
-class Fox: Animal {
-    var tailLength: Double
+class LinkedQueue<T: Equatable> {
+    private var _size = 0
+    var _head: Node<T>?
+    var _tail: Node<T>?
     
-    init(tailLength: Double) {
-        self.tailLength = tailLength
-        super.init(numLegs: 4, noise: "ringding")
+    var size: Int {
+        return _size
+    }
+    
+    init() { }
+    
+    init(fromArray array: [T]) {
+        for element in array.reversed() {
+            push(value: element)
+        }
+    }
+    
+    func front() -> T? {
+        return _tail?.value
+    }
+    
+    @discardableResult func moveToBack(value: T) -> Bool {
+        var _traveller = _head
+        while let traveller = _traveller {
+            if traveller.value == value {
+                if traveller.prev == nil && traveller.next == nil {
+                    // Only one node, do nothing and return true
+                    return true
+                }
+                
+                traveller.prev?.next = traveller.next
+                traveller.next?.prev = traveller.prev
+                
+                traveller.prev = nil
+                traveller.next = _head
+                _head?.prev = traveller
+                _head = traveller
+                
+                return true
+            }
+            _traveller = traveller.next
+        }
+        return false
+    }
+    
+    func push(value: T) {
+        let newNode = Node(value: value)
+        
+        if let head = _head {
+            newNode.next = head
+            head.prev = newNode
+        } else {
+            _tail = newNode
+        }
+        
+        _head = newNode
+        _size += 1
+    }
+    
+    @discardableResult func pop() -> T? {
+        if let tail = _tail {
+            let value = tail.value
+            
+            _tail = tail.prev
+            if _tail == nil {
+                _head = nil
+            }
+            
+            tail.prev?.next = nil
+            tail.prev = nil
+            
+            _size -= 1
+            return value
+        } else {
+            return nil
+        }
+    }
+    
+    func asArray() -> [T] {
+        var result = [T]()
+        
+        var _traveller = _head
+        while let traveller = _traveller {
+            result.append(traveller.value)
+            _traveller = traveller.next
+        }
+        
+        return result
+    }
+    
+    func printOut() {
+        var _traveller = _head
+        while let traveller = _traveller {
+            print(traveller.value)
+            _traveller = traveller.next
+        }
     }
 }
 
-let fox = Fox(tailLength: 2.1)
-print(fox.tailLength)
-fox.makeNoise()
+let queue = LinkedQueue<Int>()
+queue.push(value: 1)
+queue.push(value: 2)
+queue.push(value: 3)
+queue.push(value: 4)
+
+queue.moveToBack(value: 2)
+
+queue.printOut()
+print(queue._head?.next?.value)
+print(queue._head?.prev)
+print(queue._tail?.value)
+print(queue._tail?.next)
