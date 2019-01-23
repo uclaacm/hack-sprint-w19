@@ -8,7 +8,7 @@ Image: https://imgur.com/a/eu5Auk8
 
 - <a href="#1">Getting Started</a>
 - <a href="#11">Creating Classes for our View Controllers</a>
-- 
+- <a href="#xcassets">Adding Images Using XCAssets</a>
 - Coding in Swift
   - <a href="#13">CreatePostViewController</a>
   - <a href="#14">ReadPostViewController</a>
