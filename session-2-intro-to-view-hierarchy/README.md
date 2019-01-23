@@ -1,11 +1,14 @@
 # Hack Sprint Session 2 README
 
-Slides: https://docs.google.com/presentation/d/1yhUUzHScKqshYYoC4rqx0tK1NNfxYVVE6zMS-6y2pNQ/edit?usp=sharing
+Slides: https://docs.google.com/presentation/d/1ZpuYxtzccU85ubqKlXIYiybye5_ts9PbS6-PpKvfrt0/edit?usp=sharing
+
+Image: https://imgur.com/a/eu5Auk8
 
 ## Table of Contents
 
 - <a href="#1">Getting Started</a>
 - <a href="#11">Creating Classes for our View Controllers</a>
+- 
 - Coding in Swift
   - <a href="#13">CreatePostViewController</a>
   - <a href="#14">ReadPostViewController</a>
@@ -73,6 +76,25 @@ class CreatePostViewController: UIViewController {
 14. Using the drop-down menu, set the "Class" field (first one) to **CreatePostViewController**.
 
 <img src="https://lh4.googleusercontent.com/nPYHielQCgK2p_qgimmBBC8KbqPpMmzlSC2OfN-2y6SaQej4ZYgp6GchgjHuXsHq27Hf3QEhVT63ixpU5CItUNsAVdCbdVlfC7rWvRB4_rOnjsOmGkN_8zYRtXE15emplu_MgWtO" width="500px">
+
+---
+
+##<a id="xcassets">Adding Images Using XCAssets</a>
+
+1. In the **Project Navigator** on the left, select the folder icon named **Assets.xcassets**.
+2. In the left pane (the one containing the "AppIcon" entry), right click and select "New Image Set".
+
+<img src="https://lh6.googleusercontent.com/Q_4yL6lxZfpBEQ4xr8Bm5TisttCFoFa3ViMsUX6SeSPD3zYOGM6wJxTbgTka2A9htAkzOpijw56YsrWmGJ3vmvC27D74Mg8uPnNwKtj0Sj1DM1zScYKsKv3XwqpYZiNxycowrJoQ" width="400px">
+
+------
+
+3. Single click our newly created **Image** and rename it to **PrettyBG**.
+
+4. Click [here](https://imgur.com/a/eu5Auk8) and download the image.
+
+5. From Finder/your Downloads, drag the downloaded image into the slot in **PrettyBG** labeled **1x**.
+
+<img src="https://lh5.googleusercontent.com/v0Jm285egnClRSOAc4WnckClgojyK6OJH0F0ilcWBcIyC-d8_DMdvu5VqIkd0XmlZDpuCsGHOERpxpRF203w7rgFluPSsFvFhvWl6H0lqo3trTvxuIx6vbRdr0AxZmSrlUzT-Dn4" width="400px">
 
 ---
 
