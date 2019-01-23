@@ -79,7 +79,7 @@ class CreatePostViewController: UIViewController {
 
 ---
 
-##<a id="xcassets">Adding Images Using XCAssets</a>
+## <a id="xcassets">Adding Images Using XCAssets</a>
 
 1. In the **Project Navigator** on the left, select the folder icon named **Assets.xcassets**.
 2. In the left pane (the one containing the "AppIcon" entry), right click and select "New Image Set".
