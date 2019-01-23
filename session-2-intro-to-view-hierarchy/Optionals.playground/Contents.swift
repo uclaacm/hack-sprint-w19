@@ -22,7 +22,7 @@ class Person {
 
 let kevin = Person(name: "Kevin", brainPower: 10)
 let slug = Person(name: "Sluggie", brainPower: 0)
-let trump = Person(name: "Trump", brainPower: nil)
+let uscStudent = Person(name: "Trojan USuCk", brainPower: nil)
 
 // Force unwrapping - brute force. Crash the program if there's nothing there.
 func printNames(person: Person) {
@@ -55,4 +55,4 @@ func safePrintNames(person: Person) {
 
 safePrintNames(person: kevin)
 safePrintNames(person: slug)
-safePrintNames(person: trump)
+safePrintNames(person: uscStudent)
