@@ -1,0 +1,6 @@
+framework module Pods_UsChat {
+  umbrella header "Pods-UsChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0589A4E449B727CEB8599F97 /* Pods_UsChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329E063E39C76DD5D4945A27 /* Pods_UsChat.framework */; };
+		EEF3BF6F220A66DD00FE5A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3BF6E220A66DD00FE5A52 /* AppDelegate.swift */; };
+		EEF3BF71220A66DD00FE5A52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3BF70220A66DD00FE5A52 /* ViewController.swift */; };
+		EEF3BF74220A66DD00FE5A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF3BF72220A66DD00FE5A52 /* Main.storyboard */; };
+		EEF3BF76220A66E300FE5A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF3BF75220A66E300FE5A52 /* Assets.xcassets */; };
+		EEF3BF79220A66E300FE5A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF3BF77220A66E300FE5A52 /* LaunchScreen.storyboard */; };
+		EEF3BF83220AD3F000FE5A52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEF3BF82220AD3F000FE5A52 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		065665389280FEB55B7D46C2 /* Pods-UsChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UsChat/Pods-UsChat.debug.xcconfig"; sourceTree = "<group>"; };
+		329E063E39C76DD5D4945A27 /* Pods_UsChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		453BA9CF908F2E2333DF49AF /* Pods-UsChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsChat/Pods-UsChat.release.xcconfig"; sourceTree = "<group>"; };
+		EEF3BF6B220A66DD00FE5A52 /* UsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF3BF6E220A66DD00FE5A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEF3BF70220A66DD00FE5A52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEF3BF73220A66DD00FE5A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEF3BF75220A66E300FE5A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEF3BF78220A66E300FE5A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEF3BF7A220A66E300FE5A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF3BF82220AD3F000FE5A52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEF3BF68220A66DD00FE5A52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0589A4E449B727CEB8599F97 /* Pods_UsChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A10B1FE4813BBD3B4A5E05B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				065665389280FEB55B7D46C2 /* Pods-UsChat.debug.xcconfig */,
+				453BA9CF908F2E2333DF49AF /* Pods-UsChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E01486ECC672F71750AEBF7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				329E063E39C76DD5D4945A27 /* Pods_UsChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEF3BF62220A66DD00FE5A52 = {
+			isa = PBXGroup;
+			children = (
+				EEF3BF6D220A66DD00FE5A52 /* UsChat */,
+				EEF3BF6C220A66DD00FE5A52 /* Products */,
+				1A10B1FE4813BBD3B4A5E05B /* Pods */,
+				E01486ECC672F71750AEBF7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEF3BF6C220A66DD00FE5A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEF3BF6B220A66DD00FE5A52 /* UsChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEF3BF6D220A66DD00FE5A52 /* UsChat */ = {
+			isa = PBXGroup;
+			children = (
+				EEF3BF6E220A66DD00FE5A52 /* AppDelegate.swift */,
+				EEF3BF70220A66DD00FE5A52 /* ViewController.swift */,
+				EEF3BF72220A66DD00FE5A52 /* Main.storyboard */,
+				EEF3BF75220A66E300FE5A52 /* Assets.xcassets */,
+				EEF3BF77220A66E300FE5A52 /* LaunchScreen.storyboard */,
+				EEF3BF7A220A66E300FE5A52 /* Info.plist */,
+				EEF3BF82220AD3F000FE5A52 /* GoogleService-Info.plist */,
+			);
+			path = UsChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEF3BF6A220A66DD00FE5A52 /* UsChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF3BF7D220A66E300FE5A52 /* Build configuration list for PBXNativeTarget "UsChat" */;
+			buildPhases = (
+				C1D2E9B180F28EC72C15A69B /* [CP] Check Pods Manifest.lock */,
+				EEF3BF67220A66DD00FE5A52 /* Sources */,
+				EEF3BF68220A66DD00FE5A52 /* Frameworks */,
+				EEF3BF69220A66DD00FE5A52 /* Resources */,
+				D7264E4524F0E8B42A0AA88E /* [CP] Embed Pods Frameworks */,
+				666C49332F5FEA5E6DC79CEA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UsChat;
+			productName = UsChat;
+			productReference = EEF3BF6B220A66DD00FE5A52 /* UsChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEF3BF63220A66DD00FE5A52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kevin Tan";
+				TargetAttributes = {
+					EEF3BF6A220A66DD00FE5A52 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EEF3BF66220A66DD00FE5A52 /* Build configuration list for PBXProject "UsChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEF3BF62220A66DD00FE5A52;
+			productRefGroup = EEF3BF6C220A66DD00FE5A52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEF3BF6A220A66DD00FE5A52 /* UsChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEF3BF69220A66DD00FE5A52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF3BF83220AD3F000FE5A52 /* GoogleService-Info.plist in Resources */,
+				EEF3BF79220A66E300FE5A52 /* LaunchScreen.storyboard in Resources */,
+				EEF3BF76220A66E300FE5A52 /* Assets.xcassets in Resources */,
+				EEF3BF74220A66DD00FE5A52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		666C49332F5FEA5E6DC79CEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsChat/Pods-UsChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D2E9B180F28EC72C15A69B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UsChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7264E4524F0E8B42A0AA88E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UsChat/Pods-UsChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsChat/Pods-UsChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEF3BF67220A66DD00FE5A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF3BF71220A66DD00FE5A52 /* ViewController.swift in Sources */,
+				EEF3BF6F220A66DD00FE5A52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEF3BF72220A66DD00FE5A52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF3BF73220A66DD00FE5A52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEF3BF77220A66E300FE5A52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF3BF78220A66E300FE5A52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEF3BF7B220A66E300FE5A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEF3BF7C220A66E300FE5A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEF3BF7E220A66E300FE5A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065665389280FEB55B7D46C2 /* Pods-UsChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UsChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ktan17.UsChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEF3BF7F220A66E300FE5A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453BA9CF908F2E2333DF49AF /* Pods-UsChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UsChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ktan17.UsChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEF3BF66220A66DD00FE5A52 /* Build configuration list for PBXProject "UsChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF3BF7B220A66E300FE5A52 /* Debug */,
+				EEF3BF7C220A66E300FE5A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF3BF7D220A66E300FE5A52 /* Build configuration list for PBXNativeTarget "UsChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF3BF7E220A66E300FE5A52 /* Debug */,
+				EEF3BF7F220A66E300FE5A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEF3BF63220A66DD00FE5A52 /* Project object */;
+}
