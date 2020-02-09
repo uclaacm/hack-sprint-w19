@@ -1,6 +1,6 @@
 # Hack Sprint Session 1 README
 
-**Slides**: https://docs.google.com/presentation/d/1jdLz1cU41l7fj3WQTB8BHoS2whf8-1vAX3s8D_2MoaQ/edit?usp=sharing
+**Slides**: https://docs.google.com/presentation/d/1cZ4DsQSiuAV2HQlXVYSJQzyyH_unR9e2Afs_DvGDifc/edit?usp=sharing
 
 **Image**: https://imgur.com/a/u1fm6
 
